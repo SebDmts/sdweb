@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Web | Développeur Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="vanta-canvas"></div>
+
+    <nav class="fixed w-full z-50 bg-slate-950/60 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center">
+            <div class="text-2xl font-black tracking-tighter flex-none italic">
+                SD <span class="text-blue-500">Web</span>
+            </div>
+
+            <div class="hidden md:flex flex-grow justify-center space-x-12 text-xs uppercase tracking-[0.2em] font-bold">
+                <a href="#accueil" class="hover:text-blue-400 transition">Accueil</a>
+                <a href="#services" class="hover:text-blue-400 transition">Services</a>
+                <a href="#portfolio" class="hover:text-blue-400 transition">Réalisations</a>
+            </div>
+
+            <div class="flex-none">
+                <a href="#contact" class="px-8 py-3 bg-blue-600 rounded-full hover:bg-blue-700 transition text-xs font-black uppercase tracking-widest shadow-lg shadow-blue-500/20">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="accueil" class="min-h-screen flex items-center justify-center pt-20">
+        <div class="text-center px-4" data-aos="fade-up" data-aos-duration="1500">
+            <h1 class="text-7xl md:text-[10rem] font-black mb-4 tracking-tighter">SD <span class="gradient-text">Web.</span></h1>
+            <p class="text-slate-300 text-lg md:text-xl max-w-xl mx-auto mb-12 font-medium">
+                Solutions web haute performance pour entreprises ambitieuses.
+            </p>
+            <a href="#portfolio" class="px-12 py-5 bg-white text-black font-black rounded-full hover:scale-105 transition-all transform uppercase text-xs tracking-[0.2em]">
+                Découvrir mon travail
+            </a>
+        </div>
+    </section>
+
+    <section id="services" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="section-title" data-aos="fade-up">Services</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="card-glass p-12 rounded-[2.5rem] hover:border-blue-500/30 transition-all">
+                    <h3 class="text-xl font-extrabold mb-4 uppercase tracking-wider">Sites Vitrines</h3>
+                    <p class="text-slate-400 leading-relaxed">Design exclusif et optimisation SEO pour une présence digitale impactante.</p>
+                </div>
+                <div class="card-glass p-12 rounded-[2.5rem] hover:border-blue-500/30 transition-all">
+                    <h3 class="text-xl font-extrabold mb-4 uppercase tracking-wider">Web Apps</h3>
+                    <p class="text-slate-400 leading-relaxed">Développement d'outils métiers robustes et applications web sur-mesure.</p>
+                </div>
+                <div class="card-glass p-12 rounded-[2.5rem] hover:border-blue-500/30 transition-all">
+                    <h3 class="text-xl font-extrabold mb-4 uppercase tracking-wider">Maintenance</h3>
+                    <p class="text-slate-400 leading-relaxed">Suivi technique permanent, sécurité renforcée et mises à jour régulières.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="section-title" data-aos="fade-up">Réalisations</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-[2rem] bg-slate-900/50 border border-white/5">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800" class="w-full h-80 object-cover opacity-40 group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-black via-transparent to-transparent">
+                        <h3 class="text-2xl font-bold">E-Commerce</h3>
+                        <p class="text-slate-400 text-sm mb-4">Next.js & Stripe</p>
+                        <a href="#" class="text-blue-400 font-black text-xs tracking-widest uppercase">Voir le projet →</a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="section-title" data-aos="fade-up">Contact</h2>
+            <form class="card-glass p-8 md:p-12 rounded-[2.5rem] space-y-6 text-left">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Nom" class="w-full bg-white/5 border border-white/10 p-5 rounded-2xl focus:outline-none focus:border-blue-500">
+                    <input type="email" placeholder="Email" class="w-full bg-white/5 border border-white/10 p-5 rounded-2xl focus:outline-none focus:border-blue-500">
+                </div>
+                <textarea rows="5" placeholder="Votre projet..." class="w-full bg-white/5 border border-white/10 p-5 rounded-2xl focus:outline-none focus:border-blue-500"></textarea>
+                <button class="w-full py-5 bg-white text-black font-black rounded-2xl hover:bg-blue-600 hover:text-white transition uppercase tracking-widest text-xs">
+                    Envoyer
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-16 text-center border-t border-white/5">
+        <div class="text-2xl font-black italic mb-2">SD <span class="text-blue-500">Web</span></div>
+        <p class="text-slate-600 text-[10px] uppercase tracking-[0.3em]">© 2026 SD Web — Tous droits réservés</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
