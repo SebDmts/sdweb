@@ -23,6 +23,7 @@
             <div class="hidden md:flex flex-grow justify-center space-x-12 text-xs uppercase tracking-[0.2em] font-bold">
                 <a href="#accueil" class="hover:text-blue-400 transition">Accueil</a>
                 <a href="#services" class="hover:text-blue-400 transition">Services</a>
+                <a href="#forfaits" class="hover:text-blue-400 transition">Forfaits</a>
                 <a href="#portfolio" class="hover:text-blue-400 transition">Réalisations</a>
             </div>
 
@@ -49,19 +50,234 @@
     <section id="services" class="py-32 px-6">
         <div class="max-w-7xl mx-auto">
             <h2 class="section-title" data-aos="fade-up">Services</h2>
-            <div class="grid md:grid-cols-3 gap-10">
-                <div class="card-glass p-12 rounded-[2.5rem] hover:border-blue-500/30 transition-all">
-                    <h3 class="text-xl font-extrabold mb-4 uppercase tracking-wider">Sites Vitrines</h3>
-                    <p class="text-slate-400 leading-relaxed">Design exclusif et optimisation SEO pour une présence digitale impactante.</p>
+            <p class="text-center text-slate-400 max-w-3xl mx-auto mb-16 -mt-8" data-aos="fade-up" data-aos-delay="100">
+                Du site vitrine élégant à la plateforme e-commerce complète, je conçois des solutions web performantes adaptées à vos ambitions.
+            </p>
+            
+            <!-- Types de projets -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+                <div class="card-glass p-8 rounded-[2rem] hover:border-blue-500/30 transition-all group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-14 h-14 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-500/30 transition-all">
+                        <svg class="w-7 h-7 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-extrabold mb-3 uppercase tracking-wider">Sites Vitrines</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Présentez votre activité avec élégance. Design sur-mesure, animations fluides et SEO optimisé pour maximiser votre visibilité.</p>
                 </div>
-                <div class="card-glass p-12 rounded-[2.5rem] hover:border-blue-500/30 transition-all">
-                    <h3 class="text-xl font-extrabold mb-4 uppercase tracking-wider">Web Apps</h3>
-                    <p class="text-slate-400 leading-relaxed">Développement d'outils métiers robustes et applications web sur-mesure.</p>
+                <div class="card-glass p-8 rounded-[2rem] hover:border-purple-500/30 transition-all group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-14 h-14 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-purple-500/30 transition-all">
+                        <svg class="w-7 h-7 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-extrabold mb-3 uppercase tracking-wider">E-Commerce</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Boutiques en ligne complètes avec gestion des stocks, paiement sécurisé (Stripe, PayPal) et tableau de bord administrateur.</p>
                 </div>
-                <div class="card-glass p-12 rounded-[2.5rem] hover:border-blue-500/30 transition-all">
-                    <h3 class="text-xl font-extrabold mb-4 uppercase tracking-wider">Maintenance</h3>
-                    <p class="text-slate-400 leading-relaxed">Suivi technique permanent, sécurité renforcée et mises à jour régulières.</p>
+                <div class="card-glass p-8 rounded-[2rem] hover:border-emerald-500/30 transition-all group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-14 h-14 bg-emerald-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-500/30 transition-all">
+                        <svg class="w-7 h-7 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-extrabold mb-3 uppercase tracking-wider">Web Apps</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Applications métier sur-mesure avec authentification sécurisée, gestion des rôles et interfaces utilisateur intuitives.</p>
                 </div>
+                <div class="card-glass p-8 rounded-[2rem] hover:border-amber-500/30 transition-all group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-14 h-14 bg-amber-500/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-amber-500/30 transition-all">
+                        <svg class="w-7 h-7 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-extrabold mb-3 uppercase tracking-wider">Maintenance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Suivi technique continu, mises à jour de sécurité, sauvegardes automatiques et support réactif pour votre tranquillité.</p>
+                </div>
+            </div>
+
+            <!-- Technologies -->
+            <div class="card-glass p-10 md:p-14 rounded-[2.5rem]" data-aos="fade-up">
+                <h3 class="text-xl font-extrabold mb-8 uppercase tracking-wider text-center">Technologies maîtrisées</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="flex flex-col items-center p-6 bg-white/5 rounded-2xl hover:bg-white/10 transition-all">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="w-12 h-12 mb-4" alt="React">
+                        <span class="font-bold text-sm">React</span>
+                        <span class="text-slate-500 text-xs mt-1">Interfaces modernes</span>
+                    </div>
+                    <div class="flex flex-col items-center p-6 bg-white/5 rounded-2xl hover:bg-white/10 transition-all">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="w-12 h-12 mb-4 invert" alt="Next.js">
+                        <span class="font-bold text-sm">Next.js</span>
+                        <span class="text-slate-500 text-xs mt-1">Full-stack React</span>
+                    </div>
+                    <div class="flex flex-col items-center p-6 bg-white/5 rounded-2xl hover:bg-white/10 transition-all">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" class="w-12 h-12 mb-4 invert" alt="Symfony">
+                        <span class="font-bold text-sm">Symfony</span>
+                        <span class="text-slate-500 text-xs mt-1">Backend robuste</span>
+                    </div>
+                    <div class="flex flex-col items-center p-6 bg-white/5 rounded-2xl hover:bg-white/10 transition-all">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="w-12 h-12 mb-4" alt="JavaScript">
+                        <span class="font-bold text-sm">Vanilla JS</span>
+                        <span class="text-slate-500 text-xs mt-1">Léger & performant</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fonctionnalités clés -->
+            <div class="mt-16 grid md:grid-cols-3 gap-6" data-aos="fade-up">
+                <div class="flex items-center gap-4 p-6 card-glass rounded-2xl">
+                    <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">Authentification</h4>
+                        <p class="text-slate-500 text-xs">Connexion sécurisée, OAuth, 2FA</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 p-6 card-glass rounded-2xl">
+                    <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">Paiement en ligne</h4>
+                        <p class="text-slate-500 text-xs">Stripe, PayPal, abonnements</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 p-6 card-glass rounded-2xl">
+                    <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">Dashboard Admin</h4>
+                        <p class="text-slate-500 text-xs">Gestion complète & analytics</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 p-6 card-glass rounded-2xl">
+                    <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">Responsive Design</h4>
+                        <p class="text-slate-500 text-xs">Parfait sur tous les écrans</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 p-6 card-glass rounded-2xl">
+                    <div class="w-12 h-12 bg-rose-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">Performance</h4>
+                        <p class="text-slate-500 text-xs">Optimisation & temps de charge</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 p-6 card-glass rounded-2xl">
+                    <div class="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">SEO Avancé</h4>
+                        <p class="text-slate-500 text-xs">Visibilité Google optimisée</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="forfaits" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="section-title" data-aos="fade-up">Forfaits</h2>
+            <p class="text-center text-slate-400 max-w-2xl mx-auto mb-16 -mt-8" data-aos="fade-up" data-aos-delay="100">
+                Des formules adaptées à vos besoins, de la simple création à l'accompagnement complet.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Forfait Essentiel -->
+                <div class="card-glass p-10 rounded-[2.5rem] hover:border-blue-500/30 transition-all relative overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl group-hover:bg-blue-500/20 transition-all"></div>
+                    <div class="relative">
+                        <span class="inline-block px-4 py-1 bg-blue-500/20 text-blue-400 text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">One Shot</span>
+                        <h3 class="text-2xl font-extrabold mb-2 uppercase tracking-wider">Essentiel</h3>
+                        <p class="text-slate-400 text-sm mb-6">Création & Livraison</p>
+                        
+                        <div class="mb-8">
+                            <span class="text-4xl font-black">Sur devis</span>
+                            <span class="text-slate-500 text-sm ml-2">/ projet</span>
+                        </div>
+                        
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span class="text-slate-300">Site web sur-mesure selon vos besoins</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span class="text-slate-300">Design responsive & moderne</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span class="text-slate-300">Optimisation SEO de base</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span class="text-slate-300">Livraison du code source complet</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-blue-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span class="text-slate-300">Documentation technique</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-slate-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                                <span class="text-slate-500">Hébergement non inclus</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="#contact" class="block w-full py-4 text-center border border-white/20 rounded-2xl font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all">
+                            Demander un devis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Forfait Premium -->
+                <div class="card-glass p-10 rounded-[2.5rem] border-blue-500/30 transition-all relative overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="absolute top-0 right-0 w-48 h-48 bg-purple-500/10 rounded-full blur-3xl group-hover:bg-purple-500/20 transition-all"></div>
+                    <div class="absolute -top-px -right-px">
+                        <div class="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-[10px] font-bold uppercase tracking-widest rounded-bl-2xl rounded-tr-[2.4rem]">
+                            Recommandé
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <span class="inline-block px-4 py-1 bg-purple-500/20 text-purple-400 text-[10px] font-bold uppercase tracking-widest rounded-full mb-6">Tout inclus</span>
+                        <h3 class="text-2xl font-extrabold mb-2 uppercase tracking-wider">Premium</h3>
+                        <p class="text-slate-400 text-sm mb-6">Création & Hébergement</p>
+                        
+                        <div class="mb-8">
+                            <span class="text-4xl font-black">Sur devis</span>
+                            <span class="text-slate-500 text-sm ml-2">+ abo mensuel</span>
+                        </div>
+                        
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span class="text-slate-300">Tout le forfait Essentiel inclus</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span class="text-slate-300">Hébergement haute performance</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span class="text-slate-300">Certificat SSL & sécurité avancée</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span class="text-slate-300">Maintenance & mises à jour incluses</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span class="text-slate-300">Sauvegardes automatiques</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-purple-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                <span class="text-slate-300">Support technique prioritaire</span>
+                            </li>
+                        </ul>
+                        
+                        <a href="#contact" class="block w-full py-4 text-center bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl font-bold text-sm uppercase tracking-widest hover:opacity-90 transition-all shadow-lg shadow-purple-500/20">
+                            Demander un devis
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -71,14 +287,22 @@
             <h2 class="section-title" data-aos="fade-up">Réalisations</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="group relative overflow-hidden rounded-[2rem] bg-slate-900/50 border border-white/5">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800" class="w-full h-80 object-cover opacity-40 group-hover:scale-110 transition duration-700">
+                    <img src="./img/heraneo.png" class="w-full h-80 object-cover opacity-40 group-hover:scale-110 transition duration-700">
                     <div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-black via-transparent to-transparent">
-                        <h3 class="text-2xl font-bold">E-Commerce</h3>
-                        <p class="text-slate-400 text-sm mb-4">Next.js & Stripe</p>
-                        <a href="#" class="text-blue-400 font-black text-xs tracking-widest uppercase">Voir le projet →</a>
+                        <h3 class="text-2xl font-bold">Heraneo</h3>
+                        <p class="text-slate-400 text-sm mb-4">Plateforme française dédiée au mentorat et à la formation en ligne.</p>
+                        <a href="https://www.heraneo.com" target="_blank" class="text-blue-400 font-black text-xs tracking-widest uppercase">Voir le site →</a>
                     </div>
                 </div>
+                <div class="group relative overflow-hidden rounded-[2rem] bg-slate-900/50 border border-white/5">
+                    <img src="./img/slabr.png" class="w-full h-80 object-cover opacity-40 group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 p-8 flex flex-col justify-end bg-gradient-to-t from-black via-transparent to-transparent">
+                        <h3 class="text-2xl font-bold">Slabr</h3>
+                        <p class="text-slate-400 text-sm mb-4">Site vitrine de l'application de gestion de son patrimoine Pokémon.</p>
+                        <a href="https://www.slabr.fr" target="_blank" class="text-blue-400 font-black text-xs tracking-widest uppercase">Voir le site →</a>
+                    </div>
                 </div>
+            </div>
         </div>
     </section>
 
